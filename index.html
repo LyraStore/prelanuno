@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="google" value="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ];
+        ttq.setAndDefer = function (t, e) {
+          t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (var i = 0; i < ttq.methods.length; i++) {
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        }
+        ttq.load = function (e) {
+          var r = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          var o = document.createElement("script");
+          o.type = "text/javascript";
+          o.async = true;
+          o.src = r + "?sdkid=" + e + "&lib=" + t;
+          var a = document.getElementsByTagName("script")[0];
+          a.parentNode.insertBefore(o, a);
+        };
+        ttq.load("D69NVMRC77U1CE9DBTI0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Oferta Exclusiva para Ti 💜</title>
+
+    <style>
+      :root {
+        --pink: #f472b6;
+        --pink-soft: #fce7f3;
+        --pink-mid: #fbcfe8;
+        --lilac: #c084fc;
+        --lilac-soft: #ede9fe;
+        --lilac-mid: #ddd6fe;
+        --white: #ffffff;
+        --text-dark: #3b1f4a;
+        --text-mid: #7c5f90;
+        --text-light: #b89ec4;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(
+          145deg,
+          #fdf2f8 0%,
+          #faf5ff 50%,
+          #f5f3ff 100%
+        );
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: -120px;
+        left: -120px;
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(192, 132, 252, 0.22) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+        animation: float-orb 7s ease-in-out infinite alternate;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        bottom: -100px;
+        right: -100px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(244, 114, 182, 0.2) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+        animation: float-orb 9s ease-in-out infinite alternate-reverse;
+      }
+      @keyframes float-orb {
+        from {
+          transform: scale(1) translate(0, 0);
+        }
+        to {
+          transform: scale(1.12) translate(20px, 15px);
+        }
+      }
+
+      .petal {
+        position: fixed;
+        opacity: 0.18;
+        pointer-events: none;
+        animation: drift linear infinite;
+        font-size: 20px;
+      }
+      .petal:nth-child(1) {
+        top: 5%;
+        left: 8%;
+        font-size: 24px;
+        animation-duration: 14s;
+        animation-delay: 0s;
+      }
+      .petal:nth-child(2) {
+        top: 15%;
+        right: 6%;
+        font-size: 18px;
+        animation-duration: 18s;
+        animation-delay: -4s;
+      }
+      .petal:nth-child(3) {
+        top: 75%;
+        left: 5%;
+        font-size: 16px;
+        animation-duration: 12s;
+        animation-delay: -7s;
+      }
+      .petal:nth-child(4) {
+        top: 60%;
+        right: 8%;
+        font-size: 22px;
+        animation-duration: 16s;
+        animation-delay: -2s;
+      }
+      @keyframes drift {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0.18;
+        }
+        50% {
+          opacity: 0.28;
+        }
+        100% {
+          transform: translateY(-30px) rotate(25deg);
+          opacity: 0.18;
+        }
+      }
+
+      .wrapper {
+        position: relative;
+        z-index: 1;
+        width: min(390px, calc(100vw - 20px));
+        padding: 3px;
+        border-radius: 28px;
+        background: linear-gradient(
+          135deg,
+          var(--pink) 0%,
+          var(--lilac) 50%,
+          #a78bfa 100%
+        );
+        box-shadow:
+          0 8px 48px rgba(192, 132, 252, 0.35),
+          0 2px 12px rgba(244, 114, 182, 0.2);
+        animation: glow-ring 4s ease-in-out infinite alternate;
+        cursor: pointer;
+      }
+      @keyframes glow-ring {
+        from {
+          box-shadow: 0 8px 40px rgba(192, 132, 252, 0.3);
+        }
+        to {
+          box-shadow: 0 12px 60px rgba(192, 132, 252, 0.55);
+        }
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 26px;
+        padding: clamp(24px, 6vw, 34px) clamp(20px, 6vw, 30px);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(28px) scale(0.97);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .badge-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: linear-gradient(90deg, #fce7f3, #ede9fe);
+        color: var(--text-mid);
+        font-size: clamp(10px, 2.8vw, 11px);
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        border-radius: 100px;
+        padding: 6px 16px;
+        border: 1px solid var(--pink-mid);
+      }
+      .badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--pink), var(--lilac));
+        animation: blink 1.1s step-start infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .flag {
+        font-size: 20px;
+        animation: bounce 2s ease-in-out infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      .icon-wrap {
+        width: clamp(66px, 18vw, 82px);
+        height: clamp(66px, 18vw, 82px);
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--pink-soft),
+          var(--lilac-soft)
+        );
+        border: 2px solid var(--pink-mid);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        box-shadow: 0 4px 20px rgba(244, 114, 182, 0.25);
+      }
+      .icon-wrap img {
+        width: clamp(38px, 11vw, 48px);
+        height: auto;
+        display: block;
+        filter: drop-shadow(0 2px 8px rgba(192, 132, 252, 0.4));
+      }
+
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(22px, 6vw, 28px);
+        font-weight: 800;
+        color: var(--text-dark);
+        line-height: 1.25;
+      }
+      h2 .gradient-text {
+        background: linear-gradient(90deg, var(--pink), var(--lilac));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      p.sub {
+        font-size: clamp(13px, 3.5vw, 15px);
+        color: var(--text-mid);
+        line-height: 1.6;
+      }
+      p.sub b {
+        color: var(--text-dark);
+        font-weight: 700;
+      }
+
+      .divider {
+        border: none;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--pink-mid),
+          var(--lilac-mid),
+          transparent
+        );
+      }
+
+      .video-wrap {
+        width: 100%;
+        aspect-ratio: 9/16;
+        max-height: 240px;
+        border-radius: 18px;
+        overflow: hidden;
+        background: var(--lilac-soft);
+        position: relative;
+        box-shadow: 0 4px 24px rgba(192, 132, 252, 0.2);
+        border: 1.5px solid var(--lilac-mid);
+      }
+      .video-wrap video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .video-wrap::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(59, 31, 74, 0.3) 0%,
+          transparent 55%
+        );
+        pointer-events: none;
+        border-radius: 18px;
+      }
+
+      .trust-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+      .stars {
+        color: #f59e0b;
+        font-size: 15px;
+        letter-spacing: 1px;
+      }
+      .trust-text {
+        font-size: clamp(11px, 3vw, 12px);
+        color: var(--text-light);
+        font-weight: 600;
+      }
+
+      .urgency-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: linear-gradient(90deg, #fce7f3, #ede9fe);
+        border: 1px solid var(--pink-mid);
+        border-radius: 12px;
+        padding: 10px 16px;
+      }
+      .urgency-icon {
+        font-size: 16px;
+      }
+      .urgency-text {
+        font-size: clamp(11px, 3vw, 13px);
+        color: var(--text-mid);
+        font-weight: 700;
+      }
+
+      .btn-cta {
+        display: block;
+        width: 100%;
+        padding: clamp(15px, 4vw, 18px);
+        border: none;
+        border-radius: 16px;
+        background: linear-gradient(90deg, var(--pink) 0%, var(--lilac) 100%);
+        background-size: 200% 100%;
+        background-position: 0% 0%;
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-size: clamp(16px, 4.5vw, 19px);
+        font-weight: 700;
+        cursor: pointer;
+        transition:
+          background-position 0.4s ease,
+          transform 0.15s,
+          box-shadow 0.2s;
+        box-shadow: 0 6px 28px rgba(192, 132, 252, 0.45);
+        touch-action: manipulation;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.22) 50%,
+          transparent 100%
+        );
+        transform: translateX(-100%);
+        transition: transform 0.55s ease;
+      }
+      .btn-cta:hover {
+        background-position: 100% 0%;
+        box-shadow: 0 8px 36px rgba(192, 132, 252, 0.6);
+        transform: translateY(-2px);
+      }
+      .btn-cta:hover::before {
+        transform: translateX(100%);
+      }
+      .btn-cta:active {
+        transform: scale(0.97);
+      }
+
+      .footer-note {
+        font-size: clamp(10px, 2.5vw, 11px);
+        color: var(--text-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+      }
+
+      .nameuser-f {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span class="petal">🌸</span>
+    <span class="petal">✨</span>
+    <span class="petal">💜</span>
+    <span class="petal">🌷</span>
+
+    <div class="wrapper" onclick="handleClick()">
+      <div class="card">
+        <div class="badge-row">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Solo hoy · Oferta limitada
+          </div>
+          <span class="flag">🇨🇴</span>
+        </div>
+
+        <div class="icon-wrap">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0682/3981/8907/files/verified.webp?v=1742350641"
+            alt="Verificado"
+          />
+        </div>
+
+        <h2>
+          Descuento especial<br /><span class="gradient-text"
+            >para Colombia 💜</span
+          >
+        </h2>
+        <p class="sub">
+          Continúa y no pierdas este <b>precio exclusivo</b> en este producto.
+        </p>
+
+        <hr class="divider" />
+
+        <div class="video-wrap">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            src="https://cdn.shopify.com/videos/c/o/v/9b0b6c66f64240079b459847ec878470.mp4"
+          ></video>
+        </div>
+
+        <div class="trust-row">
+          <span class="stars">★★★★★</span>
+          <span class="trust-text">+2,400 mujeres lo amaron</span>
+        </div>
+
+        <div class="urgency-row">
+          <span class="urgency-icon">⏳</span>
+          <span class="urgency-text"
+            >Oferta válida hasta agotar existencias</span
+          >
+        </div>
+
+        <input
+          type="text"
+          name="website"
+          class="nameuser-f"
+          tabindex="-1"
+          autocomplete="off"
+          value=""
+        />
+
+        <button class="btn-cta" id="btnContinuar">Ver mi oferta →</button>
+
+        <p class="footer-note">
+          <span>🔒</span> Compra segura · Envío a toda Colombia
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const offerUrl = "https://lyrastores.com/products/lm";
+      const pageLoadTime = Date.now();
+      const MIN_TIME_MS = 3500;
+      const isOrNot = { mouseMoved: false, scrolled: false, touched: false };
+
+      document.addEventListener("mousemove", () => {
+        isOrNot.mouseMoved = true;
+      });
+      document.addEventListener("scroll", () => {
+        isOrNot.scrolled = true;
+      });
+      document.addEventListener("touchstart", () => {
+        isOrNot.touched = true;
+      });
+
+      function puntosAcc() {
+        return Object.values(isOrNot).filter(Boolean).length;
+      }
+
+      function handleClick() {
+        const honeypot = document.querySelector('[name="website"]');
+        if (honeypot && honeypot.value !== "") return;
+        if (Date.now() - pageLoadTime < MIN_TIME_MS) return;
+        if (puntosAcc() < 1) {
+          console.warn("Bot detectado");
+          return;
+        }
+        redirectToOffer();
+      }
+
+      function redirectToOffer() {
+        if (typeof ttq !== "undefined") {
+          ttq.track("ClickButton");
+        }
+        window.location.href = offerUrl;
+      }
+    </script>
+  </body>
+</html>
